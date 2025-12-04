@@ -3,43 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sobre Mim</title>
+  <title>Sobre Mim - Portfólio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
-    <h2>Meu Site</h2>
+    <h2 class="logo">Meu Portfólio</h2>
     <button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button>
   </header>
 
-  <section class="sobre-mim card">
-    <center>
-      <img src="https://picsum.photos/200" alt="Minha foto" />
-      <h2>Sobre Mim</h2>
-      <p>Olá! Meu nome é [Seu Nome] e este é um pequeno site falando um pouco sobre mim. Gosto de programação, tecnologia e criar coisas novas.</p>
-    </center>
+  <!-- PARALLAX -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Olá, eu sou <span>[Seu Nome]</span></h1>
+      <p>Desenvolvedor • Criador • Estudante de Tecnologia</p>
+      <a href="#sobre" class="btn">Sobre Mim</a>
+    </div>
   </section>
 
-  <section>
+  <!-- SOBRE -->
+  <section id="sobre" class="sobre-mim card fade-in">
+    <img src="https://picsum.photos/300" alt="Minha foto" />
+    <h2>Sobre Mim</h2>
+    <p>
+      Tenho paixão por tecnologia, programação e criação de projetos.  
+      Esse site foi feito para apresentar um pouco sobre quem eu sou e o que faço.
+    </p>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="card fade-in">
     <h2>Projetos</h2>
     <div class="projetos">
-      <div class="projeto-item">
+      <div class="projeto-item slide-up">
+        <img src="https://picsum.photos/400/250" alt="Projeto 1">
         <h3>Projeto 1</h3>
         <p>Descrição rápida do projeto.</p>
       </div>
-      <div class="projeto-item">
+
+      <div class="projeto-item slide-up" style="animation-delay: .2s;">
+        <img src="https://picsum.photos/401/250" alt="Projeto 2">
         <h3>Projeto 2</h3>
         <p>Descrição rápida do projeto.</p>
       </div>
-      <div class="projeto-item">
+
+      <div class="projeto-item slide-up" style="animation-delay: .4s;">
+        <img src="https://picsum.photos/402/250" alt="Projeto 3">
         <h3>Projeto 3</h3>
         <p>Descrição rápida do projeto.</p>
       </div>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 — Feito por mim mesmo :)</p>
+    © 2025 — Feito por [Seu Nome]
   </footer>
 
   <script src="script.js"></script>
