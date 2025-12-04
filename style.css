@@ -168,3 +168,37 @@ footer {
   margin-top: 40px;
   opacity: 0.6;
 }
+
+/* CARD DO CURRÍCULO */
+.curriculo-box {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+  max-width: 900px;
+  margin: 20px auto 0;
+  transition: 0.3s;
+}
+
+.curriculo-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.curriculo-box ul li {
+  font-size: 1.1rem;
+  margin: 8px 0;
+  padding-left: 14px;
+  position: relative;
+}
+
+/* bolinha estilo • */
+.curriculo-box ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary);
+  font-size: 1.3rem;
+}
